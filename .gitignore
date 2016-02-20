@@ -14,4 +14,3 @@
 .idea
 /public
 /config/database.yml
-config/secrets.yml

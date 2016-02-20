@@ -16,7 +16,7 @@ development:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: workremotely-clone_development
+  database: course_app_development
   pool:     5
   username: postgres
   password:
@@ -44,7 +44,7 @@ test:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: workremotely-clone_test
+  database: course_app_test
   pool:     5
   username: postgres
   password:
@@ -54,7 +54,7 @@ production:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: workremotely-clone_production
+  database: course_app_production
   pool:     5
   username: postgres
   password:

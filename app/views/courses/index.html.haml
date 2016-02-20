@@ -1,0 +1,21 @@
+%h1 Courses list
+= link_to 'Add course', new_course_path
+- if @courses.present?
+  %div.table-responsive
+    %table.table.table-striped
+      %thead
+        %tr
+          %th Title
+          %th Image
+          %th
+      %tbody
+        - @courses.each do |n|
+          %tr
+            %td= n.title
+            %td= image_tag(n.picture_url) if n.picture?
+            %td.col-md-1
+              = link_to 'Edit', edit_course_path(n)
+              = link_to 'Remove', course_path(n), method: :delete, data: { confirm: 'Are you sure?' }
+  = paginate @courses
+- else
+  %h2 No courses
