@@ -15,6 +15,7 @@ gem 'haml-rails', '~> 0.9.0'
 gem 'simple_form', '>= 3.2.1'
 gem 'kaminari', '~> 0.16.3'
 gem 'mini_magick'
+gem 'jquery-ui-rails'
 
 group :development, :test do
   gem 'byebug'

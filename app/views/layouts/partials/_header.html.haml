@@ -1,0 +1,40 @@
+%header.main-header
+  / Logo
+  %a.logo{:href => "index2.html"}
+    / mini logo for sidebar mini 50x50 pixels
+    %span.logo-mini RB
+    / logo for regular state and mobile devices
+    %span.logo-lg RubyBoost
+  / Header Navbar: style can be found in header.less
+  %nav.navbar.navbar-static-top{:role => "navigation"}
+    / Sidebar toggle button
+    %a.sidebar-toggle{"data-toggle" => "offcanvas", :href => "#", :role => "button"}
+      %span.sr-only Toggle navigation
+    .navbar-custom-menu
+      %ul.nav.navbar-nav
+        / User Account: style can be found in dropdown.less
+        %li.dropdown.user.user-menu
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            = image_tag 'user2-160x160.jpg', class: 'user-image', alt: 'User Image'
+            %span.hidden-xs Alexander Pierce
+          %ul.dropdown-menu
+            / User image
+            %li.user-header
+              = image_tag 'user2-160x160.jpg', class: 'img-circle', alt: 'User Image'
+              %p
+                Alexander Pierce - Web Developer
+                %small Member since Nov. 2012
+            / Menu Body
+            %li.user-body
+              .col-xs-4.text-center
+                %a{:href => "#"} Followers
+              .col-xs-4.text-center
+                %a{:href => "#"} Sales
+              .col-xs-4.text-center
+                %a{:href => "#"} Friends
+            / Menu Footer
+            %li.user-footer
+              .pull-left
+                %a.btn.btn-default.btn-flat{:href => "#"} Profile
+              .pull-right
+                %a.btn.btn-default.btn-flat{:href => "#"} Sign out
