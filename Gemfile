@@ -16,6 +16,7 @@ gem 'simple_form', '>= 3.2.1'
 gem 'kaminari', '~> 0.16.3'
 gem 'mini_magick'
 gem 'jquery-ui-rails'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug'
