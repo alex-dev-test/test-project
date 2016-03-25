@@ -1,0 +1,21 @@
+%section.content-header
+  %h1 Courses list
+  = link_to 'New course', new_users_course_path, class: 'btn btn-primary'
+- if false
+  - if @courses.present?
+    .table-responsive
+      %table.table.table-striped
+        %thead
+          %tr
+            %th #
+            %th Header
+            %th Header
+            %th Header
+            %th Header
+        %tbody
+          - @courses.each do |course|
+            %tr
+              %td course.title
+    = paginate @courses
+  - else
+    %h2 No courses

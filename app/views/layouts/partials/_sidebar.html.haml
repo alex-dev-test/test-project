@@ -25,9 +25,12 @@
       %li.header MAIN NAVIGATION
       %li.active.treeview
       %li.treeview
-        %a{:href => "#"}
+        = link_to users_courses_path do
+          %i.fa.fa-files-o
+          %span My courses
+          %span.label.label-primary.pull-right
+      %li.treeview
+        = link_to courses_path do
           %i.fa.fa-files-o
           %span Courses
           %span.label.label-primary.pull-right
-        %ul.treeview-menu
-          %li
