@@ -20,4 +20,5 @@
 //= require fastclick/fastclick
 //= require app
 //= require demo
+//= require social_share_button
 //= require pages/dashboard
