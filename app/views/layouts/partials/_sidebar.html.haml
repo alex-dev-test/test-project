@@ -9,28 +9,28 @@
           = image_tag 'user2-160x160.jpg', class: 'img-circle', alt: 'User Image'
         .pull-left.info
           %p Alexander Pierce
-          %a{:href => "#"}
+          %a{ href: '#' }
             %i.fa.fa-circle.text-success
             Online
-    / search form
-    %form.sidebar-form{:action => "#", :method => "get"}
-      .input-group
-        %input.form-control{:name => "q", :placeholder => "Search...", :type => "text"}/
-        %span.input-group-btn
-          %button#search-btn.btn.btn-flat{:name => "search", :type => "submit"}
-            %i.fa.fa-search
-    / /.search form
-    / sidebar menu: : style can be found in sidebar.less
-    %ul.sidebar-menu
-      %li.header MAIN NAVIGATION
-      %li.active.treeview
-      %li.treeview
-        = link_to users_courses_path do
-          %i.fa.fa-files-o
-          %span My courses
-          %span.label.label-primary.pull-right
-      %li.treeview
-        = link_to courses_path do
-          %i.fa.fa-files-o
-          %span Courses
-          %span.label.label-primary.pull-right
+      / search form
+      %form.sidebar-form{ action: '#', method: 'get' }
+        .input-group
+          %input.form-control{ name: 'q', placeholder: 'Search...', type: 'text' }/
+          %span.input-group-btn
+            %button#search-btn.btn.btn-flat{ name: 'search', type: 'submit' }
+              %i.fa.fa-search
+      / /.search form
+      / sidebar menu: : style can be found in sidebar.less
+      %ul.sidebar-menu
+        %li.header MAIN NAVIGATION
+        %li.active.treeview
+        %li.treeview
+          = link_to users_courses_path do
+            %i.fa.fa-files-o
+            %span My courses
+            %span.label.label-primary.pull-right
+        %li.treeview
+          = link_to courses_path do
+            %i.fa.fa-files-o
+            %span Courses
+            %span.label.label-primary.pull-right
