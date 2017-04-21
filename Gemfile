@@ -17,6 +17,8 @@ gem 'kaminari', '~> 0.16.3'
 gem 'mini_magick'
 gem 'jquery-ui-rails'
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook', '~> 4.0'
 
 group :development, :test do
   gem 'byebug'
